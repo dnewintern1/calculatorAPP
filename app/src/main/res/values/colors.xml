@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="tip">#FF3399</color>
+    <color name="Bill_amount_bg">#FFCCE5</color>
+    <color name="YELLOW">#FFFF99</color>
+
+
+
+</resources>

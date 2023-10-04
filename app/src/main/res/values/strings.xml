@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CalculatorApp</string>
+    <string name="this_is_the_tip_color">This is the Tip Calculator</string>
+    <string name="enter_the_amount">Enter the amount</string>
+    <string name="tipValue">25%</string>
+    <string name="total">Total</string>
+    <string name="savingPercent">25%</string>
+    <string name="total_money_saved"> Money Saved</string>
+</resources>

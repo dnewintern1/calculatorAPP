@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/this_is_the_tip_color"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:elevation="@dimen/Elevation"
+        android:background="@color/tip"
+        android:layout_gravity="center_horizontal"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:useDefaultMargins="true">
+
+        <EditText
+            android:id="@+id/edtMoneyAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/billAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@color/Bill_amount_bg"
+            android:elevation="@dimen/Elevation"
+            android:hint="@string/enter_the_amount"
+            android:padding="@dimen/text_padding"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tipPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_columnSpan="1"
+            android:text="@string/tipValue"
+            android:textSize="18sp"
+            android:padding="@dimen/text_padding"
+            android:layout_gravity="fill_horizontal"/>
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/seekbarhight"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_columnSpan="1"
+            android:max="50"
+            android:layout_gravity="fill"
+            android:progress="25" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_columnSpan="1"
+            android:padding="@dimen/text_padding"
+            android:text="Tip"
+            android:layout_gravity="fill_horizontal"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Bill_amount_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/Bill_amount_bg"
+            android:elevation="@dimen/Elevation"
+            android:padding="@dimen/text_padding"
+            android:text=""
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/text_padding"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_columnSpan="1"
+            android:layout_gravity="left|center_horizontal"
+            android:text="@string/total"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Total_amt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/Bill_amount_bg"
+            android:elevation="@dimen/Elevation"
+            android:padding="@dimen/text_padding"
+            android:text=""
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/tip"
+            android:gravity="center"
+            android:elevation="@dimen/Elevation"
+            android:padding="@dimen/text_padding"
+            android:text="this is saving Calculator"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/enterSalary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/YELLOW"
+            android:elevation="@dimen/Elevation"
+            android:hint="Enter your sallary here "
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="6"
+            android:padding="@dimen/text_padding"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtSavePercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="6"
+            android:layout_column="0"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill_horizontal"
+            android:gravity="center"
+            android:padding="@dimen/text_padding"
+            android:text="@string/savingPercent"
+            android:textSize="18sp" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/seekbarhight"
+            android:layout_row="6"
+            android:layout_column="1"
+            android:layout_gravity="fill_horizontal"
+            android:max="100"
+            android:progress="50" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_money_saved"
+            android:layout_gravity="fill_horizontal"
+            android:layout_row="7"
+            android:layout_column="0"
+            android:gravity="center"
+            android:padding="@dimen/text_padding"
+            android:textSize="18sp"
+            android:layout_columnSpan="1"
+            />
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_row="7"
+            android:layout_column="1"
+            android:layout_gravity="fill_horizontal"
+            android:layout_rowSpan="1"
+            android:padding="@dimen/text_padding"
+            android:background="@color/YELLOW"
+            android:id="@+id/txtMoneySaved"/>
+
+
+
+
+
+    </GridLayout>
+
+
+
+
+</LinearLayout>
